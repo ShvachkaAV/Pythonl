@@ -1,0 +1,18 @@
+a=input("Введите а:")
+b=input("Введите b:")
+c=input("Введите c:")
+
+a,b,c=int(a),int(b),int(c)
+
+d = b**2-4*a*c
+print("Дискримнант равен:"+str(d))
+
+if d>0:
+    x1 = (-b+(d)**0.5)/(2*a)
+    x2 = (-b-(d)**0.5)/(2*a)
+    print("x1 равен:"+str(int(x1))+" х2 равен:"+str(int(x2)))
+elif d==0:
+    x1=-b/2*a
+    print("x1 и х2 равны:"+str(x1))
+else:
+    print("Действительных корней нет")
